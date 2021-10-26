@@ -7,11 +7,10 @@ public class PlayerHand {
 
     public List<Card> cards;
 
-    public PlayerHand() {
+    public PlayerHand(int handSize) {
         cards = new ArrayList<>();
 
-        int HANDSIZE = 5;
-        for (int i = 0; i < HANDSIZE; i++) {
+        for (int i = 0; i < handSize; i++) {
             cards.add(new Card());
         }
     }
